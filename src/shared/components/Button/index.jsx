@@ -1,8 +1,9 @@
 import React from 'react'
+import styled from './button.module.scss'
 
 const Button = () => {
   return (
-    <div>Button</div>
+    <div className={styled.btn}>Button</div>
   )
 }
 
