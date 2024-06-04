@@ -1,0 +1,29 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.hed {
+  overflow: hidden;
+  background-color: #202020;
+  padding: 20px 10px;
+  border-bottom: 1px solid #ffffff;
+}
+.hedlogo {
+  float: left;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.hed a {
+  float: left;
+  color: #ffffff;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  background: none;
+}
+
+.hedbody {
+  float: right;
+}
