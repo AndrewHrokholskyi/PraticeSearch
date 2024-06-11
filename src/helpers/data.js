@@ -90,17 +90,17 @@ export const cards = [
   },
 ];
 
-// export const userstudent = [
-//   {
-//     id: 0,
-//     name: "Ivan",
-//     surname: "Petrov",
-//     phone: "+380501234567",
-//     email: "ivan.petrov@example.com",
-//     userType: "Student",
-//     university: "Kyiv National University",
-//   },
-// ];
+export const userStudent = [
+  {
+    id: 0,
+    name: "Ivan",
+    surname: "Petrov",
+    phone: "+380501234567",
+    email: "ivan.petrov@example.com",
+    userType: "Student",
+    university: "Kyiv National University",
+  },
+];
 
 export const lists = [
   {
