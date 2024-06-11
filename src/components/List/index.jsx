@@ -4,7 +4,7 @@ import styled from "../Lists/lists.module.scss";
 
 export default function List({ vacancy }) {
   return (
-    <li className={styled.vacancies} key={vacancy.id}>
+    <li className={styled.vacancies}>
       <p>
         <strong>{vacancy.name}</strong>
       </p>

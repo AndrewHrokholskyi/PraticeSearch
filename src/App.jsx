@@ -4,8 +4,9 @@ import Home from "./pages/Home";
 import BusinessCards from "./pages/BusinessCards";
 import Instructions from "./pages/Instructions";
 import Requests from "./pages/Requests";
-import StProfaile from "./pages/StProfaile";
+import Profile from "./pages/Profile";
 import Layout from "./Layout";
+import NotFound from "./pages/NotFound";
 
 function App() {
   return (
@@ -16,8 +17,8 @@ function App() {
           <Route path="/BusinessCards" element={<BusinessCards />} />
           <Route path="/Instructions" element={<Instructions />} />
           <Route path="/Requests" element={<Requests />} />
-          <Route path="/StProfaile" element={<StProfaile />} />
-          <Route path="*" element={<Home />} />
+          <Route path="/Profile" element={<Profile />} />
+          <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
     </>

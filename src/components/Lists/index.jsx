@@ -9,7 +9,7 @@ const Lists = () => {
       <h1 className={styled.h}>Рекомендації для вас</h1>
       <ul className={styled.container}>
         {vacancies.map((vacancy) => (
-          <List vacancy={vacancy} />
+          <List vacancy={vacancy} key={vacancy.id} />
         ))}
       </ul>
     </div>
