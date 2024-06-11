@@ -6,6 +6,9 @@ import Instructions from "./pages/Instructions";
 import Requests from "./pages/Requests";
 import StProfaile from "./pages/StProfaile";
 import Layout from "./Layout";
+import VisitCard from "./pages/BusinessCards/components/VisitCard";
+import PracticeCard from "./pages/Home/components/PracticeCard";
+import AddCard from "./pages/BusinessCards/components/AddCard";
 
 function App() {
   return (
@@ -17,6 +20,9 @@ function App() {
           <Route path="/Instructions" element={<Instructions />} />
           <Route path="/Requests" element={<Requests />} />
           <Route path="/StProfaile" element={<StProfaile />} />
+          <Route path="/business-cards/:id" element={<VisitCard />} />
+          <Route path="/add-card" element={<AddCard />} />
+          <Route path="/practice-card/:id" element={<PracticeCard />} />
           <Route path="*" element={<Home />} />
         </Route>
       </Routes>

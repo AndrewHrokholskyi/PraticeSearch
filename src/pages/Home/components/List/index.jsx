@@ -1,10 +1,16 @@
 import React from "react";
-
-import styled from "../Lists/lists.module.scss";
+import styled from "./list.module.scss";
+import { useNavigate } from "react-router-dom";
 
 export default function List({ vacancy }) {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate(`/practice-card/${vacancy.id}`);
+  };
+
   return (
-    <li className={styled.vacancies} key={vacancy.id}>
+    <li className={styled.vacancies} key={vacancy.id} onClick={handleClick}>
       <p>
         <strong>{vacancy.name}</strong>
       </p>

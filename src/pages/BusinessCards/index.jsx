@@ -1,11 +1,10 @@
 import React from "react";
+import InformationCards from "./components/InformationCards";
 
 const BusinessCards = () => {
   return (
     <>
-      <div>
-        <h1>Візитки</h1>
-      </div>
+      <InformationCards />
     </>
   );
 };

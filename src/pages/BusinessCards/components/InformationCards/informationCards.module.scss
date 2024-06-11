@@ -1,0 +1,23 @@
+h1 {
+  text-align: center;
+  color: white;
+  margin: 20px 0;
+}
+
+.bid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0;
+}
+
+.claim {
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px 0;
+  width: 48%;
+  
+}

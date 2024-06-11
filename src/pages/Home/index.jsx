@@ -1,9 +1,11 @@
 import React from "react";
+import Lists from "./components/Lists";
 
 const Home = () => {
   return (
     <>
-      <div>Home</div>
+      <h1>Рекомендації для вас</h1>
+      <Lists />
     </>
   );
 };
