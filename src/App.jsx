@@ -4,8 +4,9 @@ import Home from "./pages/Home";
 import BusinessCards from "./pages/BusinessCards";
 import Instructions from "./pages/Instructions";
 import Requests from "./pages/Requests";
-import StProfaile from "./pages/StProfaile";
+import Profile from "./pages/Profile";
 import Layout from "./Layout";
+import NotFound from "./pages/NotFound";
 import VisitCard from "./pages/BusinessCards/components/VisitCard";
 import PracticeCard from "./pages/Home/components/PracticeCard";
 import AddCard from "./pages/BusinessCards/components/AddCard";
@@ -23,7 +24,8 @@ function App() {
           <Route path="/business-cards/:id" element={<VisitCard />} />
           <Route path="/add-card" element={<AddCard />} />
           <Route path="/practice-card/:id" element={<PracticeCard />} />
-          <Route path="*" element={<Home />} />
+          <Route path="/Profile" element={<Profile />} />
+          <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
     </>
