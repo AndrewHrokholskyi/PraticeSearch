@@ -20,7 +20,6 @@ function App() {
           <Route path="/BusinessCards" element={<BusinessCards />} />
           <Route path="/Instructions" element={<Instructions />} />
           <Route path="/Requests" element={<Requests />} />
-          <Route path="/StProfaile" element={<StProfaile />} />
           <Route path="/business-cards/:id" element={<VisitCard />} />
           <Route path="/add-card" element={<AddCard />} />
           <Route path="/practice-card/:id" element={<PracticeCard />} />

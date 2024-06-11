@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { FaUserCircle } from "react-icons/fa";
 import useModal from "../../../../hooks/useModal";
-import { userstudent as initialUserStudent } from "../../../../helpers/data";
+import { userStudent as initialUserStudent } from "../../../../helpers/data";
 import styled from "./student.module.scss";
 import Modal from "../../../../shared/components/Modal";
 import StudentForm from "../StudentForm";
