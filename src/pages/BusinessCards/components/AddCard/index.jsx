@@ -1,11 +1,10 @@
 import React from "react";
+import CreatingInformatsonCard from "../CreatingInformatsonCard";
 
 const AddCard = () => {
   return (
     <>
-      <div>
-        
-      </div>
+      <CreatingInformatsonCard />
     </>
   );
 };
