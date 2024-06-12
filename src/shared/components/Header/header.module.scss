@@ -1,29 +1,23 @@
-* {
-  margin: 0px;
-  padding: 0px;
-}
-
 .hed {
-  overflow: hidden;
+  display: flex;
+  align-items: center;
+
+  justify-content: space-between;
   background-color: #202020;
   padding: 20px 10px;
   border-bottom: 1px solid #ffffff;
 }
 .hedlogo {
-  float: left;
   font-size: 25px;
   font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
 }
 
 .hed a {
-  float: left;
   color: #ffffff;
   text-align: center;
   padding: 12px;
   text-decoration: none;
   background: none;
-}
-
-.hedbody {
-  float: right;
 }

@@ -10,6 +10,7 @@ import NotFound from "./pages/NotFound";
 import VisitCard from "./pages/BusinessCards/components/VisitCard";
 import PracticeCard from "./pages/Home/components/PracticeCard";
 import AddCard from "./pages/BusinessCards/components/AddCard";
+import CreateStudentProfile from "./pages/Profile/components/CreateStudentProfile";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="/add-card" element={<AddCard />} />
           <Route path="/practice-card/:id" element={<PracticeCard />} />
           <Route path="/Profile" element={<Profile />} />
+          <Route path="/CreateProfile" element={<CreateStudentProfile />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
