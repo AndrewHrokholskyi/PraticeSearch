@@ -2,52 +2,48 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import styled from "./studentform.module.scss";
 
-const StudentForm = () => {
+const StudentForm = ({ student, onSubmit }) => {
   const {
     register,
     handleSubmit,
     formState: { errors },
-  } = useForm();
+  } = useForm({ defaultValues: student });
 
-  const onSubmit = (data) => console.log(data);
-
-  // const onSubmit = (data) => {
-  //   setUserStudent(data);
-  // };
+  const submitHandler = (data) => {
+    onSubmit(data);
+  };
 
   return (
     <div className={styled.bodyForma}>
       <div className={styled.forma}>
-        <form onSubmit={handleSubmit(onSubmit)}>
-          <div className={styled.inputl}>
-            <div className={styled.inputForm}>
-              <label htmlFor="name">Ім'я</label>
-              <input
-                id="name"
-                aria-invalid={errors.name ? "true" : "false"}
-                {...register("name", { required: true, maxLength: 30 })}
-              />
-              {errors.name && errors.name.type === "required" && (
-                <span role="alert">This is required</span>
-              )}
-              {errors.name && errors.name.type === "maxLength" && (
-                <span role="alert">Max length exceeded</span>
-              )}
-            </div>
-            <div className={styled.inputForm}>
-              <label htmlFor="surname">Прізвище</label>
-              <input
-                id="surname"
-                aria-invalid={errors.surname ? "true" : "false"}
-                {...register("surname", { required: true, maxLength: 30 })}
-              />
-              {errors.surname && errors.surname.type === "required" && (
-                <span role="alert">This is required</span>
-              )}
-              {errors.surname && errors.surname.type === "maxLength" && (
-                <span role="alert">Max length exceeded</span>
-              )}
-            </div>
+        <form onSubmit={handleSubmit(submitHandler)}>
+          <div className={styled.inputForm}>
+            <label htmlFor="name">Ім'я</label>
+            <input
+              id="name"
+              aria-invalid={errors.name ? "true" : "false"}
+              {...register("name", { required: true, maxLength: 30 })}
+            />
+            {errors.name && errors.name.type === "required" && (
+              <span role="alert">Це поле обов'язкове</span>
+            )}
+            {errors.name && errors.name.type === "maxLength" && (
+              <span role="alert">Перевищено максимальну довжину</span>
+            )}
+          </div>
+          <div className={styled.inputForm}>
+            <label htmlFor="surname">Прізвище</label>
+            <input
+              id="surname"
+              aria-invalid={errors.surname ? "true" : "false"}
+              {...register("surname", { required: true, maxLength: 30 })}
+            />
+            {errors.surname && errors.surname.type === "required" && (
+              <span role="alert">Це поле обов'язкове</span>
+            )}
+            {errors.surname && errors.surname.type === "maxLength" && (
+              <span role="alert">Перевищено максимальну довжину</span>
+            )}
           </div>
           <div className={styled.inputForm}>
             <label htmlFor="email">Електронна пошта</label>
@@ -60,10 +56,10 @@ const StudentForm = () => {
               })}
             />
             {errors.email && errors.email.type === "required" && (
-              <span role="alert">This is required</span>
+              <span role="alert">Це поле обов'язкове</span>
             )}
             {errors.email && errors.email.type === "pattern" && (
-              <span role="alert">Invalid email format</span>
+              <span role="alert">Невірний формат електронної пошти</span>
             )}
           </div>
           <div className={styled.inputForm}>
@@ -77,10 +73,10 @@ const StudentForm = () => {
               })}
             />
             {errors.phone && errors.phone.type === "required" && (
-              <span role="alert">This is required</span>
+              <span role="alert">Це поле обов'язкове</span>
             )}
             {errors.phone && errors.phone.type === "pattern" && (
-              <span role="alert">Invalid phone number format</span>
+              <span role="alert">Невірний формат номера телефону</span>
             )}
           </div>
 

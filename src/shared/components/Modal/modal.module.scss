@@ -22,10 +22,10 @@
 .modal__content {
   padding: 20px;
   border-radius: 12px;
-  background-color: white;
+  background-color: #202020;
   transform: scale(0.5);
   transition: 0.4s all;
-  width: 50vw;
+  // width: 50vw;
 }
 
 .modal__content.active {

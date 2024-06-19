@@ -10,6 +10,7 @@ const Header = () => {
           Practic Search
         </Link>
         <div className={styled.hedbody}>
+          <Link to="/">Головна</Link>
           <Link to="/Instructions">Інструкція</Link>
           <Link to="/Requests">Заявки</Link>
           <Link to="/BusinessCards">Візитки</Link>

@@ -4,14 +4,14 @@
 
   justify-content: space-between;
   background-color: #202020;
-  padding: 20px 10px;
+  padding: 10px 10px;
   border-bottom: 1px solid #ffffff;
 }
 .hedlogo {
   font-size: 25px;
-  font-weight: bold;
+  // font-weight: bold;
   font-family: "Roboto", sans-serif;
-  font-weight: 700;
+  font-weight: 900;
 }
 
 .hed a {
@@ -20,4 +20,8 @@
   padding: 12px;
   text-decoration: none;
   background: none;
+}
+
+.hedbody {
+  font-weight: 700;
 }

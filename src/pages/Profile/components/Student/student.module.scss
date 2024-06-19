@@ -1,10 +1,75 @@
 .profaile {
   background-color: #202020;
-  padding: 50px;
+  padding: 30px;
   color: #ffffff;
-  height: calc(100vh - 200px);
+  // height: calc(100vh - 200px);
 }
 
+.icon {
+  width: 56px;
+  height: 56px;
+}
+
+.profaile h1 {
+  display: flex;
+}
 .btn {
   float: right;
+}
+.open {
+  background: #ffffff;
+  color: rgb(0, 0, 0);
+  border-radius: 5px;
+  border: none;
+  margin: 10px;
+  font-size: 14px;
+  font-weight: 100;
+  width: 150px;
+  height: 40px;
+  text-align: center;
+}
+
+.avatar_foto {
+  background-color: #161616;
+  border: 3px solid #262626;
+  border-radius: 20px;
+  margin-bottom: 15px;
+}
+
+.ava {
+  display: flex;
+  align-items: center;
+  padding-left: 25px;
+  padding-bottom: 30px;
+}
+
+.info {
+  background-color: #161616;
+  border: 3px solid #262626;
+  border-radius: 20px;
+  margin-bottom: 15px;
+}
+
+.info h3 {
+  padding: 20px;
+}
+
+.info p {
+  padding-left: 25px;
+  margin-bottom: 10px;
+}
+
+.messages_notifications {
+  background-color: #161616;
+  border: 3px solid #262626;
+  border-radius: 20px;
+}
+
+.messages_notifications p {
+  padding-left: 25px;
+  margin-bottom: 10px;
+}
+
+.messages_notifications h3 {
+  padding: 20px;
 }

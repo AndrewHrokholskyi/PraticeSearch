@@ -3,7 +3,7 @@ import styled from "./footer.module.scss";
 
 const Footer = () => {
   return (
-    <>
+    <div>
       <footer className={styled.footer}>
         <p>
           &copy; Проект розробили студенти Вінницького національного технічного
@@ -11,7 +11,7 @@ const Footer = () => {
           Яблонський Д.А., Грохольсьікий А.В.
         </p>
       </footer>
-    </>
+    </div>
   );
 };
 
